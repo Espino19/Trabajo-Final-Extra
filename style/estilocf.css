@@ -1,0 +1,321 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Comic Sans MS;
+}
+
+body{
+	background: gray;
+	color: white;
+}
+
+header{
+	width: 100%;
+	height: 130px; /*Le damos un alto fijo al menu*/
+    overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
+    position: relative;
+}
+
+nav{
+	margin: 0px auto 0px auto;
+	width: 95%;
+	max-width: 100%;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav > ul{
+	display: table;   
+	width: 100%;
+	background: black;
+	position: relative;
+}
+
+nav > ul li{
+	display: table-cell;
+}
+
+nav ul li .primero{
+	background: yellow;
+}
+
+nav ul li .segundo{
+	background: green;
+}
+
+nav ul li .tercero{
+	background: yellow;
+}
+
+nav ul li .cuarto{
+	background: green;
+}
+/*sub-menu*/
+
+nav > ul > li:hover > ul {
+	display: block;
+	height: 100%;
+}
+
+nav > ul > li > ul{
+	display: block;
+	position: absolute;
+	background: black;
+	
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a{
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding:20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+}
+
+nav > ul > li > a span{
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon{
+	display: block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.titulo{
+    margin: 0px auto ;
+	width: 95%;
+	max-width: 100%;
+	height: 130px;
+}
+
+.titulo h1{
+	text-align: center;
+	margin: 10px 0;
+}
+article{
+	width: 95%;
+	margin: 0 2.5%;
+	height: 75%;
+	float: left;
+}
+
+article .izquierda{
+	width: 20%;
+	height: calc(100vh - 150px);
+	float: left;
+	margin-right: 1%;
+	border-radius: 5px;
+	border: 3px solid black;
+	color: black;
+	background: white;
+	overflow: auto;
+}
+
+article .izquierda form{
+	margin: 12px 0;
+	width: 90%;
+}
+
+article .izquierda input{
+   font-size: 18px;
+	width: 100%;
+	margin: 5px 10px;
+	text-align: center;
+	font-family: Comic Sans MS;
+	border-radius: 5px;
+}
+
+article .izquierda input:hover{
+	text-shadow: 0px 0px 10px green;
+   -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}
+
+article .derecha{
+	width: 78%;
+	height: calc(100vh - 150px);
+	border-radius: 5px;
+	background: white;
+	border: 3px solid black;
+	color: black;
+	overflow: auto;
+}
+
+.boton{
+   background:green;
+}
+
+.boton:hover{
+     cursor: pointer;
+     background: #3CFE59;
+     -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}
+
+.separador{
+	width: 100%;
+	height: 3px;
+	background: black;
+}
+
+.izquierda form label{
+	width: 100%;
+	margin: 0 12px;
+}
+
+.izquierda h3{
+   text-align: center;
+   color: green;
+   margin-top: 10px;
+}
+
+article .derecha table{
+	border-collapse: collapse; 
+	border-color: black;
+	width: 98%;
+	margin: 10px 1%;
+}
+
+.co-dif{
+	background: black;
+	color: white;
+	font-size: 20px;
+}
+
+article table .couno{
+	background: white;
+	color: black;
+	margin-left: 5px;
+}
+
+article table .couno:hover{
+	background: yellow;
+}
+article table .couno td{
+	font-size: 18px;
+}
+
+article table .couno td label{
+	margin-left: 5px;
+}
+
+article table .codos{
+	background: gray;
+	color: white;
+	margin-left: 5px;
+}
+
+article table .codos label{
+	margin-left: 5px;
+}
+
+article table .codos:hover{
+	background: yellow;
+	color: black;
+}
+
+article table .co-dif label{
+	margin-left: 5px;
+}
+
+.uno{
+	width: 30%; 
+	margin-left: 1px;
+}
+
+.dos{
+	width: 10%;
+	text-align: center; 
+}
+
+.tres{
+	width: 2%;
+	text-align: center; 
+}
+
+.cuatro{
+	width: 20%;
+	text-align: center; 
+}
+
+.cinco{
+	width: 58%; 
+
+	margin-left: 1px;
+}
+
+/**/
+
+.unoo{
+	width: 30%;
+	height: 30px; 
+}
+
+.doso{
+	width: 10%; 
+	height: 30px;
+	text-align: center;
+}
+
+.treso{
+	width: 2%; 
+	height: 30px;
+	text-align: center;
+}
+
+.cuatroo{
+	width: 20%; 
+	height: 30px;
+	text-align: center;
+}
+
+.cincoo{
+	width: 58%; 
+	height: 30px;
+}

@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	background: white;
+	width: 40%;
+	margin: 0px auto;
+	border: 3px solid black;
+	border-radius: 5px;
+	color: black;
+}
+
+section form{
+   margin: 10px;
+}
+
+section form input, section h1, section label{
+	width: 100%;
+	width: 95%;
+	margin: 5px 2.5%;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+section form input{
+	padding: 2px 10px;
+}
+
+section form input:hover{
+	 text-shadow: 0px 0px 10px green;
+     -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}
+
+section h1{
+	text-align: center;
+	font-size: 26px;
+}
+
+.boton{
+	background: green;
+	margin-top: 20px;
+}
+.boton:hover{
+	cursor: pointer;
+     background: #3CFE59;
+     -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}

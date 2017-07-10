@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:Comic Sans MS;
+}
+
+body{
+	background: gray;
+	color: white;
+}
+
+header{
+	width: 100%;
+	height: 130px; /*Le damos un alto fijo al menu*/
+    overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
+    position: relative;
+}
+
+nav{
+	margin: 0px auto 0px auto;
+	width: 95%;
+	max-width: 100%;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav > ul{
+	display: table;   
+	width: 100%;
+	background: black;
+	position: relative;
+}
+
+nav > ul li{
+	display: table-cell;
+}
+
+/*sub-menu*/
+
+nav > ul > li:hover > ul {
+	display: block;
+	height: 100%;
+}
+
+nav > ul > li > ul{
+	display: block;
+	position: absolute;
+	background: black;
+	
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a{
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding:20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+}
+
+nav > ul > li > a span{
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon{
+	display: block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.titulo{
+    margin: 0px auto ;
+	width: 95%;
+	max-width: 100%;
+	height: 130px;
+}
+
+.titulo h1{
+	text-align: center;
+	margin: 10px 0;
+}
+
+/*Colores*/
+
+nav ul li .primero{
+	background: yellow;
+}
+
+nav ul li .segundo{
+	background: green;
+}
+
+nav ul li .tercero{
+	background: yellow;
+}
+
+nav ul li .cuarto{
+	background: green;
+}
+
+/******* CUERPO DEL PROGRAMA *******/
+
+section{
+	color: black;
+	width: 95%;
+	margin: 0 auto;
+}
+section div{
+
+}
+
+section div input{
+	text-align: center;
+}
+
+section div label{
+	
+}
+
+.contenedor{
+	position: relative;
+	height: 480px;
+}
+.cuadrante{
+	height: 480px;
+	width: 20%;
+	border: solid 3px black;
+	position: absolute;
+	overflow: auto;
+	background: white;
+	border-radius: 5px;
+}
+
+.aco{
+	position: relative;
+	left: 15%;
+	font-size: 23px;
+	color: green;
+}
+
+.aco2{
+	position: relative;
+	left: 5%;
+	font-size: 23px;
+	color: green;
+}
+.divuno{
+	width: 96%;
+	position: absolute;
+	height: 175px;
+	overflow: auto;
+	background: white;
+	border: solid 1px black;
+	border-radius: 5px;
+	margin: 0 1.5%;
+	margin-top: 10px;
+}
+.divdos{
+	width: 96%;
+	position: absolute;
+	height: 235px;
+	top: 195px;
+    overflow: auto;
+    background: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 0 1.5%;
+
+}
+.divtres{
+	width: 96%;
+	position: absolute;
+	top: 440px;
+	overflow: auto;
+	background: white;
+	border: solid 1px black;
+	border-radius: 5px;
+	margin: 0 1.5%;
+	margin-bottom: 10px;
+}
+.divcuatro{
+	width: 79%;
+	border: solid 3px black;
+	height: 100%;
+	position: absolute;
+	left: 21%;
+    background: white;
+	overflow: auto;
+	border-radius: 5px;
+}
+
+.tabla{
+	width: 95%;
+	margin: auto 2.5%;
+}
+/***********************************/
+section .divcuatro table{
+	border-collapse: collapse; 
+	border-color: black;
+	width: 98%;
+	position: absolute;
+	left: 1%;
+	right: 1%;
+	top: 2%;
+    margin-bottom: 10px;
+}
+
+.divcuatro .co-dif{
+	background: black;
+	color: white;
+	font-size: 20px;
+}
+
+section .divcuatro table .couno{
+	background: white;
+	color: black;
+	margin-left: 5px;
+}
+
+ section table .couno:hover{
+	background: yellow;
+}
+section .divcuatro table .couno td{
+	font-size: 18px;
+}
+
+section .divcuatro table .couno td label{
+	margin-left: 5px;
+}
+
+section .divcuatro table .codos{
+	background: gray;
+	color: white;
+	margin-left: 5px;
+}
+
+section .divcuatro table .codos:hover{
+	background: yellow;
+	color: black;
+}
+
+section .divcuatro table .codos td{
+	font-size: 18px;
+}
+section .divcuatro table .codos td label{
+	margin-left: 5px;
+}
+
+section .divcuatro table .co-dif label{
+	margin-left: 5px;
+}
+.uno{
+	width: 15%; 
+}
+
+.dos{
+	width: 65%;
+	margin-left: 1px; 
+}
+
+.tres{
+	width: 10%;
+	text-align: center; 
+}
+
+.cuatro{
+	width: 10%;
+	text-align: center; 
+}
+.unoo{
+	width: 15%;
+	height: 30px;
+	text-align: center; 
+}
+
+.doso{
+	width: 65%; 
+	height: 30px;
+	text-align: center;
+}
+
+.treso{
+	width: 10%; 
+	height: 30px;
+	text-align: center;
+}
+
+.cuatroo{
+	width: 10%; 
+	height: 30px;
+	text-align: center;
+}
+
+.contenedor div input{
+	font-size: 18px;
+	width: 90%;
+	margin: 5px 4%;
+	text-align: center;
+	font-family: Comic Sans MS;
+	border-radius: 5px;
+}
+
+.contenedor div label{
+	width: 90%;
+	margin: auto 4%;
+}
+
+.contenedor div input:hover{
+	text-shadow: 0px 0px 10px green;
+   -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}
+.boton{
+   background: green;
+}
+
+.boton:hover{
+     cursor: pointer;
+     background: #3CFE59;
+     -webkit-transition: all .5ms ease;
+ 	 -moz-transition: all .5s ease;
+   	 -ms-transition: all .5s ease;
+	 -o-transition: all .5s ease;
+	 transition: all .5s ease;
+}
